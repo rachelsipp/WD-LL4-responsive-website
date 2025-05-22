@@ -1,0 +1,301 @@
+/* Basic mobile-first styles for the header */
+
+/* Import Google Fonts for Quicksand and Open Sans */
+@import url('https://fonts.googleapis.com/css?family=Quicksand:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+/* Use a soft, easy-to-read font combo: 'Quicksand' for headings, 'Open Sans' for body */
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  background-color: #eafaf1; /* very light green background */
+  color: #2e4d3a; /* dark green text for good contrast */
+  margin: 0;
+  padding: 0;
+}
+
+.logo, header h1, header h2, header h3 {
+  font-family: 'Quicksand', Arial, sans-serif;
+}
+
+/* Crunchyroll-inspired orange header */
+header {
+  background-color: #7ed6a2; /* soft green */
+  padding: 12px 0;
+  text-align: center; /* Center content for mobile */
+}
+
+/* Logo styling similar to Crunchyroll */
+.logo {
+  font-size: 2em;
+  font-weight: bold;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+/* Remove default list styling from navigation */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Stack navigation links vertically for mobile */
+nav ul li {
+  display: block;
+  margin: 8px 0;
+}
+
+/* Style the navigation links */
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1em;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Add a simple hover effect */
+nav ul li a:hover {
+  background-color: #6ec6e6; /* soft blue on hover */
+  color: #fff;
+}
+
+/* Style for login and signup buttons */
+.login-btn {
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+  margin-left: 0;
+}
+.signup-btn {
+  background: #6ec6e6; /* soft blue */
+  color: #fff;
+  font-weight: bold;
+  margin-left: 0;
+}
+.signup-btn:hover {
+  background: #b2f7ef; /* lighter blue-green */
+  color: #2e4d3a;
+}
+
+/* Hide the menu button by default */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2em;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+/* Hero section styles */
+.hero {
+  height: 100vh; /* Full viewport height */
+  background-color: #b2f7ef; /* Soft blue-green background */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 16px;
+}
+
+.hero h1 {
+  font-family: 'Quicksand', Arial, sans-serif;
+  font-size: 2.5em;
+  color: #2e4d3a; /* Dark green for eco feel */
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 1.2em;
+  color: #2e4d3a;
+  max-width: 500px;
+}
+
+/* Call to action styles */
+.cta {
+  margin-top: 32px;
+}
+.cta p {
+  font-size: 1.2em;
+  color: #2e4d3a;
+  margin-bottom: 16px;
+}
+.cta-btn {
+  display: inline-block;
+  background: linear-gradient(90deg, #7ed6a2 0%, #6ec6e6 100%); /* soft green to blue gradient */
+  color: #fff;
+  font-family: 'Quicksand', Arial, sans-serif;
+  font-size: 1.15em;
+  padding: 14px 36px;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 16px rgba(46, 77, 58, 0.10);
+  letter-spacing: 1px;
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+.cta-btn:hover {
+  background: linear-gradient(90deg, #6ec6e6 0%, #7ed6a2 100%); /* reverse gradient on hover */
+  color: #fff;
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 8px 24px rgba(46, 77, 58, 0.15);
+}
+
+/* Destinations section styles */
+.destinations {
+  background-color: #eafaf1; /* Light green background for eco feel */
+  padding: 40px 0;
+  text-align: center;
+}
+
+.destinations h2 {
+  font-family: 'Quicksand', Arial, sans-serif;
+  color: #2e4d3a;
+  margin-bottom: 32px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+
+.destination-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(46, 77, 58, 0.08);
+  padding: 24px 20px;
+  max-width: 320px;
+  width: 90%;
+  text-align: left;
+}
+
+.destination-card h3 {
+  font-family: 'Quicksand', Arial, sans-serif;
+  color: #6ec6e6;
+  margin-top: 0;
+}
+
+.destination-card p {
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: #2e4d3a;
+  margin-bottom: 0;
+}
+
+/* Style for destination images */
+.destination-img {
+  width: 100%;
+  max-width: 100%; /* Make image responsive */
+  height: auto;     /* Keep image aspect ratio */
+  border-radius: 8px;
+  margin-bottom: 16px;
+  display: block;
+}
+
+/* Responsive styles for small screens */
+@media (max-width: 599px) {
+  /* Show the menu button */
+  .menu-toggle {
+    display: block;
+  }
+  /* Hide the nav menu by default */
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #7ed6a2; /* soft green */
+    margin-top: 8px;
+  }
+  /* Show nav when active */
+  nav ul.active {
+    display: flex;
+  }
+  nav ul li {
+    display: block;
+    margin: 8px 0;
+    text-align: center;
+  }
+}
+
+/* Responsive: Show navigation horizontally on larger screens */
+@media (min-width: 600px) {
+  header {
+    text-align: left;
+    padding: 12px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo {
+    margin-bottom: 0;
+  }
+  .menu-toggle {
+    display: none;
+  }
+  nav ul {
+    display: flex !important;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: flex-end;
+    background: none;
+  }
+  nav ul li {
+    display: inline;
+    margin: 0;
+  }
+  .login-btn, .signup-btn {
+    margin-left: 8px;
+  }
+  /* Make the hero section take up less vertical space on large screens */
+  .hero {
+    height: 70vh;
+    padding: 40px 0;
+  }
+  /* Increase font size for better readability */
+  .hero h1 {
+    font-size: 3em;
+  }
+  .hero p {
+    font-size: 1.4em;
+  }
+  /* Destinations section: more space and row layout */
+  .destinations {
+    padding: 60px 0;
+  }
+  .card-container {
+    flex-direction: row;
+    gap: 32px;
+    align-items: stretch;
+    justify-content: center;
+  }
+  .destination-card {
+    max-width: 340px;
+    padding: 32px 24px;
+    margin: 0;
+  }
+  .destination-img {
+    max-width: 320px;
+    margin-bottom: 20px;
+  }
+}
+
+/* Show cards in a row on larger screens */
+@media (min-width: 700px) {
+  .card-container {
+    flex-direction: row;
+    gap: 32px;
+  }
+}
